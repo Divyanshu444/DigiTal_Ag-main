@@ -11881,7 +11881,7 @@ Location:
 .inner-section-area .hero-header-area h1 {
   color: var(--ztc-text-text-1);
   font-family: var(--ztc-family-font1);
-  font-size: var(--ztc-font-size-font-s80);
+  font-size: 60px;
   font-style: normal;
   font-weight: var(--ztc-weight-bold);
   line-height: 80px;
@@ -16562,6 +16562,7 @@ Location:
   width: 150px;
   -o-object-fit: cover;
      object-fit: cover;
+     margin-left: -18px;
 }
 .header-site-icon .slide-bar.slide-bar1 .sidebar-info .sidebar-logo .close-mobile-menu a {
   font-size: var(--ztc-font-size-font-s32);
