@@ -9199,7 +9199,7 @@ img {
   --ztc-font-size-font-s14: 14px;
   --ztc-font-size-font-s16: 16px;
   --ztc-font-size-font-s18: 18px;
-  --ztc-font-size-font-s20: 20px;
+  --ztc-font-size-font-s20: 14px;
   --ztc-font-size-font-s22: 22px;
   --ztc-font-size-font-s24: 24px;
   --ztc-font-size-font-s26: 26px;
@@ -9213,7 +9213,7 @@ img {
   --ztc-font-size-font-s42: 42px;
   --ztc-font-size-font-s44: 44px;
   --ztc-font-size-font-s46: 46px;
-  --ztc-font-size-font-s48: 48px;
+  --ztc-font-size-font-s48: 45px;
   --ztc-font-size-font-s50: 50px;
   --ztc-font-size-font-s52: 52px;
   --ztc-font-size-font-s54: 54px;
@@ -9470,6 +9470,57 @@ Location:
   width: 100%;
   z-index: 1;
   border-radius: 8px;
+}
+
+
+.battan{
+  color: var(--ztc-text-text-4);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s18);
+  font-weight: var(--ztc-weight-bold);
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.4s;
+  background: var(--ztc-bg-bg-8);
+  padding: 17px 20px;
+  border-radius: var(--rounded-lg, 4px);
+  position: relative;
+  z-index: 2;
+  margin-top: 430px;
+}
+.battan:hover {
+  color: black;
+  transition: all 0.4s;
+  transform: translateY(-5px);
+}
+.battan:hover::before {
+  border-bottom: 4px solid var(--ztc-bg-bg-1);
+  transition: all 0.4s;
+}
+.battan:hover::after {
+  visibility: visible;
+  opacity: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.4s;
+}
+.battan::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  bottom: 0;
+  left: 50%;
+  background: var(--ztc-bg-bg-1);
+  transition: all 0.4s;
+  border-radius: 4px;
+  width: 10px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
 }
 
 .vl-btn2 {
@@ -9940,6 +9991,7 @@ Location:
   font-weight: var(--ztc-weight-bold);
   line-height: 20.462px;
   display: block;
+  margin-left: 21px;
 }
 .service1-section-area .started-btn a span {
   height: 50px;
@@ -19275,7 +19327,7 @@ Location:
   text-transform: uppercase;
 }
 .portfolio1-section-area .portfolio-slider-area .portfolio-boxarea .arrow-content .content-area a {
-  color: var(--ztc-text-text-4);
+  color: black;
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s20);
   font-style: normal;
@@ -19894,7 +19946,7 @@ Location:
 }
 .about1-section-area .elements9 {
   position: absolute;
-  top: 0;
+  top: 14px;
   left: 0;
   width: 100%;
   height: 200px;

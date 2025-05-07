@@ -48,7 +48,7 @@
   text-align-last: justify;
   text-justify: inter-word;
   font-weight: 700;
-  text-transform: none !important;
+  
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero1-section-area .hero-header-area h1.text-anime-style-3 {
@@ -71,7 +71,7 @@
   letter-spacing: -0.03em;
   text-align: justify;
   text-align-last: justify;
-  text-transform: none !important;
+  
 }
 
 .hero1-section-area .hero-header-area h1.text-anime-style-3 .line-1 {
@@ -108,7 +108,7 @@
 }
 
 .vl-btn2:hover {
-  color: #0000fb !important;
+  color: #050506 !important;
 }
 
 /* SVG paths with yellow color */
