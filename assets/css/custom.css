@@ -1,14 +1,15 @@
 /* Custom styles for smaller headings */
 .smaller-heading {
-  font-size: 25px !important;
+  font-size: 21px !important;
   line-height: 29px !important;
-  font-weight: 500 !important;
+  font-weight: 540 !important;
   white-space: normal;
   overflow: visible;
   text-overflow: clip;
   letter-spacing: -0.02em;
   max-width: 100%;
   display: inline-block;
+  text-transform: none !important;
 }
 
 /* Image styling for smaller-heading */
@@ -47,6 +48,7 @@
   text-align-last: justify;
   text-justify: inter-word;
   font-weight: 700;
+  text-transform: none !important;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero1-section-area .hero-header-area h1.text-anime-style-3 {
@@ -69,6 +71,7 @@
   letter-spacing: -0.03em;
   text-align: justify;
   text-align-last: justify;
+  text-transform: none !important;
 }
 
 .hero1-section-area .hero-header-area h1.text-anime-style-3 .line-1 {
