@@ -10914,6 +10914,7 @@ Location:
   font-weight: var(--ztc-weight-bold);
   line-height: 20.462px;
   display: block;
+  margin-left: 17px;
 }
 .hero1-section-area .hero-bottom-images .started-btn a span {
   height: 50px;
