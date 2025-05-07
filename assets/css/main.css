@@ -11440,6 +11440,7 @@ Location:
   width: 100%;
   white-space: nowrap;
   padding: 28px 0;
+  margin-top: 30px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider1-section-area .marquee-wrap .marquee-text {

@@ -79,6 +79,8 @@
 .hero1-section-area .hero-header-area h1.text-anime-style-3 .line-2 {
   width: 90%;
   letter-spacing: -0.02em;
+  text-align: left;
+  text-align-last: left;
 }
 
 .hero1-section-area .hero-header-area h1.text-anime-style-3 .line-3 {
