@@ -10742,11 +10742,11 @@ Location:
   }
 }
 .hero1-section-area .hero-header-area h1 .elements1 {
-  height: 70px;
-  width: 70px;
+  height: 79px;
+  width: 82px;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-top: -5px;
+  margin-top: 10px;
 }
 @media (max-width: 767px) {
   .hero1-section-area .hero-header-area h1 .elements1 {
@@ -10757,9 +10757,9 @@ Location:
   border-radius: 110px;
   border: 2px solid var(--Main-Color, #2e09e6);
   background: rgba(255, 255, 255, 0.1);
-  padding: 10px 16px;
-  width: 150px;
-  margin-top: -16px;
+  padding: 8px 8px;
+  width: 100px;
+  margin-top: 5px;
 }
 @media (max-width: 767px) {
   .hero1-section-area .hero-header-area h1 .others-img1 {

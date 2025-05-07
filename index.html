@@ -234,12 +234,40 @@
     <div class="row align-items-center">
       <div class="col-lg-7">
         <div class="hero-header-area">
-          <h5><img src="assets/img/icons/sub-logo1.svg" alt=""> Advancing automation, AI, and next-generation software for businesses globally.</h5>
+          <h5><img src="assets/img/icons/sub-logo1.svg" alt="">Empowering SMBs with AI-Driven IT Solutions</h5>
           <div class="space32"></div>
-          <h1 class="text-anime-style-3">Intelligent Growth <img src="assets/img/elements/elements1.png" alt="" class="elements1 keyframe5"></h1>
+          <h1 class="text-anime-style-3">
+            <span class="line line-1">Virtual Agents & IT Support</span>
+            <span class="line line-2">Delivering Measurable Results</span>
+            <span class="line line-3">For Business Growth</span>
+            <img src="assets/img/elements/elements1.png" alt="" class="elements1 keyframe5">
+          </h1>
           <div class="space40 d-md-block d-none"></div>
           <div class="space16 d-block d-md-none"></div>
-          <h1 class="smaller-heading"><img src="assets/img/all-images/others/others-img1.png" alt="" class="others-img1"> with IT & AI Solutions for Modern Businesses</h1>
+          <h1 class="smaller-heading"><img src="assets/img/all-images/others/others-img1.png" alt="" class="others-img1">Trusted By 1000+ bussiness accross the Us and Europe </h1>
+          <div class="trusted-partners-section">
+            <span class="trusted-partners-text">Our Trusted Technology Partners</span>
+            <div class="mini-partner-slider owl-carousel">
+              <div class="brand-img1">
+                <img src="assets/img/partners/microsoft-logo.png" alt="Microsoft">
+              </div>
+              <div class="brand-img1">
+                <img src="assets/img/partners/meta-logo.png" alt="Meta">
+              </div>
+              <div class="brand-img1">
+                <img src="assets/img/partners/zoho-logo.png" alt="Zoho">
+              </div>
+              <div class="brand-img1">
+                <img src="assets/img/partners/semrush-logo.png" alt="SEMrush">
+              </div>
+              <div class="brand-img1">
+                <img src="assets/img/partners/bubble-logo.png" alt="Bubble.io">
+              </div>
+            </div>
+            <div class="btn-area1">
+              <a href="#partners" class="vl-btn1" style="overflow: hidden;">Explore Our Services</a>
+            </div>
+          </div>
           <div class="space24"></div>
           
           <div class="space32"></div>
@@ -1303,5 +1331,30 @@
 <script src="assets/js/plugins/circle-progress.js"></script>
 <script src="assets/js/plugins/swiper.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.mini-partner-slider').owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      responsive:{
+        0:{
+          items: 2,
+          margin: 10
+        },
+        576:{
+          items: 3
+        },
+        768:{
+          items: 4
+        }
+      }
+    });
+  });
+</script>
 </body>
-</html></html>
+</html>
