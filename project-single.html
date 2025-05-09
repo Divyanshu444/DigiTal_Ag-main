@@ -23,6 +23,7 @@
 
     <!--=====  JS SCRIPT LINK =======-->
     <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+    <script src="assets/js/project-data.js"></script>
 </head>
 <body class="body-bg1">
 
@@ -225,7 +226,7 @@
     <div class="row align-items-center">
       <div class="col-lg-5">
         <div class="hero-header-area">
-          <h1>Our Project</h1>
+          <h1 id="project-title">Our Project</h1>
           <div class="space32"></div>
           <h4><a href="index.html">Home</a> <i class="fa-solid fa-angle-right"></i> <a href="#">Project Showcase</a></h4>
         </div>
@@ -341,27 +342,27 @@
                         <div class="space12"></div>
                         <div class="list-details">
                             <h4>Category:</h4>
-                            <h5>Website Re-Design</h5>
+                            <h5 id="project-category">Website Re-Design</h5>
                         </div>
 
                         <div class="list-details1">
                             <h4>Client:</h4>
-                            <h5>James Anderson</h5>
+                            <h5 id="project-client">James Anderson</h5>
                         </div>
 
                         <div class="list-details2">
                             <h4>Location:</h4>
-                            <h5>New York, USA</h5>
+                            <h5 id="project-location">New York, USA</h5>
                         </div>
 
                         <div class="list-details3">
-                            <h4>Value::</h4>
-                            <h5>$50.00K</h5>
+                            <h4>Value:</h4>
+                            <h5 id="project-value">$50.00K</h5>
                         </div>
 
                         <div class="list-details4">
                             <h4>Website:</h4>
-                            <h5>www.renev.com</h5>
+                            <h5 id="project-website">www.renev.com</h5>
                         </div>
 
                         <div class="list-details5">
@@ -380,19 +381,19 @@
             <div class="col-lg-8">
                 <div class="project-details-area heading1">
                     <div class="img1">
-                        <img src="assets/img/all-images/project/project-img6.png" alt="">
+                        <img id="project-image" src="assets/img/all-images/project/project-img6.png" alt="">
                     </div>
                     <div class="space32"></div>
-                    <h2>Reelup Responsive Website Design</h2>
+                    <h2 id="project-name">Reelup Responsive Website Design</h2>
                     <div class="space16"></div>
-                    <p>A well-designed user experience is the cornerstone of successful digital products, the and we believe that every interaction on your site should be purposeful and engaging. Our UI/UX design services focus on blending aesthetics with functionality, ensuring.</p>
+                    <p id="project-description">A well-designed user experience is the cornerstone of successful digital products, the and we believe that every interaction on your site should be purposeful and engaging. Our UI/UX design services focus on blending aesthetics with functionality, ensuring.</p>
                     <div class="space12"></div>
                     <div class="row">
                         <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="800">
                           <div class="progresbar">
                             <div class="progressbar">
-                               <div class="circle" data-percent="96"><canvas width="80" height="80"></canvas>
-                                   <div class="count">96%</div>
+                               <div class="circle" id="satisfaction-circle" data-percent="96"><canvas width="80" height="80"></canvas>
+                                   <div class="count" id="satisfaction-rate">96%</div>
                               </div>
                             </div>
                             <div class="content-area">
@@ -405,8 +406,8 @@
                           <div class="space28 d-md-none d-block"></div>
                           <div class="progresbar">
                             <div class="progressbar">
-                               <div class="circle" data-percent="92"><canvas width="80" height="80"></canvas>
-                                   <div class="count">92%</div>
+                               <div class="circle" id="retention-circle" data-percent="92"><canvas width="80" height="80"></canvas>
+                                   <div class="count" id="retention-rate">92%</div>
                               </div>
                             </div>
                             <div class="content-area">
@@ -419,12 +420,12 @@
                           <div class="space28 d-md-none d-block"></div>
                           <div class="progresbar">
                             <div class="progressbar">
-                               <div class="circle" data-percent="92"><canvas width="80" height="80"></canvas>
-                                   <div class="count">92%</div>
+                               <div class="circle" id="completion-circle" data-percent="92"><canvas width="80" height="80"></canvas>
+                                   <div class="count" id="completion-rate">92%</div>
                               </div>
                             </div>
                             <div class="content-area">
-                              <h4>Website Speed</h4>
+                              <h4>Completion Rate</h4>
                             </div>
                           </div>
                         </div>
@@ -434,9 +435,9 @@
                         <a href="project-single.html" class="vl-btn1" style="overflow: hidden;">live preview website</a>
                       </div>
                       <div class="space60"></div>
-                      <h3>Reelup Project Requirement:</h3>
+                      <h3>Website Overview:</h3>
                       <div class="space20"></div>
-                      <p>Effective UI/UX design goes beyond visuals; it's about creating an meaningful journey for every user who interact with your brand. Our approach combines strategic insight</p>
+                      <p id="project-overview-title">Effective UI/UX design goes beyond visuals; it's about creating an meaningful journey for every user who interact with your brand. Our approach combines strategic insight</p>
                       <div class="space12"></div>
                       <ul class="list-area">
                         <li><a href="#"><span><i class="fa-solid fa-check"></i></span>User Interface Design</a></li>
@@ -469,16 +470,16 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="portfolio-boxarea">
                             <div class="img1">
-                              <img src="assets/img/all-images/portfolio/portfolio-img1.png" alt="">
+                              <img id="related-project-1-img" src="assets/img/all-images/portfolio/portfolio-img1.png" alt="">
                             </div>
                             <div class="arrow-content">
                               <div class="arrow">
-                                <a href="project-single.html"><span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <a id="related-project-1-link" href="project-single.html?id=1"><span><i class="fa-solid fa-arrow-right"></i></span></a>
                               </div>
                               <div class="content-area">
-                                <p>User Interface design</p>
+                                <p id="related-project-1-category">User Interface design</p>
                                 <div class="space16"></div>
-                                <a href="project-single.html">Web Design For Business</a>
+                                <a id="related-project-1-name" href="project-single.html?id=1">Web Design For Business</a>
                               </div>
                             </div>
                           </div>
@@ -487,16 +488,16 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="portfolio-boxarea">
                             <div class="img1">
-                              <img src="assets/img/all-images/portfolio/portfolio-img2.png" alt="">
+                              <img id="related-project-2-img" src="assets/img/all-images/portfolio/portfolio-img2.png" alt="">
                             </div>
                             <div class="arrow-content">
                               <div class="arrow">
-                                <a href="project-single.html"><span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <a id="related-project-2-link" href="project-single.html?id=2"><span><i class="fa-solid fa-arrow-right"></i></span></a>
                               </div>
                               <div class="content-area">
-                                <p>User Interface design</p>
+                                <p id="related-project-2-category">User Interface design</p>
                                 <div class="space16"></div>
-                                <a href="project-single.html">Web Design For Business</a>
+                                <a id="related-project-2-name" href="project-single.html?id=2">Web Design For Business</a>
                               </div>
                             </div>
                           </div>
@@ -683,5 +684,108 @@
 <script src="assets/js/plugins/circle-progress.js"></script>
 <script src="assets/js/plugins/swiper.js"></script>
 <script src="assets/js/main.js"></script>
+
+<script>
+  // Function to get URL parameters
+  function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  }
+
+  // Function to load project data
+  function loadProjectData() {
+    // Get project ID from URL
+    const projectId = parseInt(getUrlParameter('id'));
+    
+    // Default to first project if no ID or invalid ID
+    let project = projectData[0];
+    
+    // Find the project with matching ID
+    if (projectId) {
+      const foundProject = projectData.find(p => p.id === projectId);
+      if (foundProject) {
+        project = foundProject;
+      }
+    }
+    
+    // Update page title
+    document.title = project.name + " - Digital Agency Project";
+    
+    // Update project details
+    document.getElementById('project-title').textContent = project.name;
+    document.getElementById('project-name').textContent = project.name;
+    document.getElementById('project-category').textContent = project.category;
+    document.getElementById('project-client').textContent = project.client;
+    document.getElementById('project-location').textContent = project.location;
+    document.getElementById('project-value').textContent = project.value;
+    document.getElementById('project-website').textContent = project.website;
+    document.getElementById('project-description').textContent = project.description;
+    document.getElementById('project-overview-title').textContent = project.projectOverviewTitle;
+    
+    // Update project image
+    document.getElementById('project-image').src = project.detailImage;
+    
+    // Update satisfaction rate
+    document.getElementById('satisfaction-rate').textContent = project.satisfactionRate + '%';
+    document.getElementById('satisfaction-circle').setAttribute('data-percent', project.satisfactionRate);
+    
+    // Update completion rate
+    document.getElementById('completion-rate').textContent = project.completionRate + '%';
+    document.getElementById('completion-circle').setAttribute('data-percent', project.completionRate);
+    
+    // Update client retention
+    document.getElementById('retention-rate').textContent = project.clientRetention + '%';
+    document.getElementById('retention-circle').setAttribute('data-percent', project.clientRetention);
+    
+    // Update related projects
+    updateRelatedProjects(projectId);
+    
+    // Reinitialize circle progress bars
+    $('.circle').circleProgress({
+      startAngle: -1.55,
+      size: 80,
+      fill: '#0000fb',
+      emptyFill: 'rgba(0, 0, 251, 0.1)',
+      lineCap: 'round'
+    }).on('circle-animation-progress', function(event, progress, stepValue) {
+      $(this).find('strong').text(Math.round(stepValue * 100) + '%');
+    });
+  }
+  
+  // Function to update related projects
+  function updateRelatedProjects(currentProjectId) {
+    // Get two random projects different from the current one
+    const availableProjects = projectData.filter(p => p.id !== currentProjectId);
+    const shuffled = [...availableProjects].sort(() => 0.5 - Math.random());
+    const relatedProjects = shuffled.slice(0, 2);
+    
+    // Update first related project
+    if (relatedProjects.length > 0) {
+      const project1 = relatedProjects[0];
+      document.getElementById('related-project-1-img').src = project1.image;
+      document.getElementById('related-project-1-link').href = `project-single.html?id=${project1.id}`;
+      document.getElementById('related-project-1-category').textContent = project1.category;
+      document.getElementById('related-project-1-name').textContent = project1.name;
+      document.getElementById('related-project-1-name').href = `project-single.html?id=${project1.id}`;
+    }
+    
+    // Update second related project
+    if (relatedProjects.length > 1) {
+      const project2 = relatedProjects[1];
+      document.getElementById('related-project-2-img').src = project2.image;
+      document.getElementById('related-project-2-link').href = `project-single.html?id=${project2.id}`;
+      document.getElementById('related-project-2-category').textContent = project2.category;
+      document.getElementById('related-project-2-name').textContent = project2.name;
+      document.getElementById('related-project-2-name').href = `project-single.html?id=${project2.id}`;
+    }
+  }
+
+  // Load project data when DOM is ready
+  $(document).ready(function() {
+    loadProjectData();
+  });
+</script>
 </body>
 </html>
