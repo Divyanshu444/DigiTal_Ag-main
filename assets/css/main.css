@@ -16014,14 +16014,14 @@ Location:
   line-height: 28px;
   display: inline-block;
   transition: all 0.4s;
-  background: var(--ztc-bg-bg-1);
-  color: var(--ztc-text-text-4);
+  background: #0d6efd;
+  color: #03060a;
   font-size: var(--ztc-font-size-font-s16);
   border-radius: 50%;
 }
 .project-details-section-area .project-details-side .project-details-box .list-details5 ul li a:hover {
-  background: var(--ztc-text-text-4);
-  color: var(--ztc-text-text-1);
+  background: #03060a;
+  color: #0d6efd;
   transition: all 0.4s;
 }
 .project-details-section-area .project-details-area {
@@ -16282,7 +16282,7 @@ Location:
   text-transform: uppercase;
 }
 .project-bottom-scetion .portfolio-boxarea .arrow-content .content-area a {
-  color: var(--ztc-text-text-4);
+  color: black;
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s20);
   font-style: normal;
