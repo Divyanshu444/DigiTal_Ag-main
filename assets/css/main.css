@@ -9166,7 +9166,7 @@ img {
   --ztc-font-size-font-s14: 14px;
   --ztc-font-size-font-s16: 16px;
   --ztc-font-size-font-s18: 18px;
-  --ztc-font-size-font-s20: 20px;
+  --ztc-font-size-font-s20: 24px;
   --ztc-font-size-font-s22: 22px;
   --ztc-font-size-font-s24: 24px;
   --ztc-font-size-font-s26: 26px;
@@ -9300,12 +9300,13 @@ Location:
 .heading1 h5 {
   color: var(--ztc-text-text-8);
   font-family: var(--ztc-family-font1);
-  font-size: var(--ztc-font-size-font-s20);
+  font-size: 27px;
   font-style: normal;
   font-weight: var(--ztc-weight-bold);
   line-height: 20px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
+  margin-top: 5px;
 }
 .heading1 h5 img {
   margin: -5px 4px 0 0;
