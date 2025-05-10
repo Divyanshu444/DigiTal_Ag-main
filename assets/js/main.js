@@ -490,4 +490,33 @@ document.addEventListener("DOMContentLoaded", function () {
       swiper: swiper3,
     },
   });
+  
+  // Industry Grid Animation with Intersection Observer
+  const industryGridItems = document.querySelectorAll('.industry-grid-item');
+  
+  if (industryGridItems.length > 0) {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+    
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add the animation class when the element is in view
+          entry.target.classList.add('animate');
+          // Once animated, no need to observe anymore
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+    
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    
+    // Observe each industry grid item
+    industryGridItems.forEach(item => {
+      observer.observe(item);
+    });
+  }
 });
