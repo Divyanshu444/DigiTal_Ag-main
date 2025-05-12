@@ -976,81 +976,53 @@ svg path[stroke="#fefe1f"] {
 }
 
 /* Left column animation */
+.left-carousel {
+  overflow: hidden;
+}
+
+/* Position the left column boxes at fixed locations */
 .left-carousel .box:nth-child(1) {
-  animation: moveDownFull 18s linear infinite;
-  animation-delay: 0s;
+  top: 0px;
+  animation: moveDownSimple 28s linear infinite;
 }
 
 .left-carousel .box:nth-child(2) {
-  animation: moveDownFull 18s linear infinite;
-  animation-delay: -2.57s;
+  top: -200px;
+  animation: moveDownSimple 28s linear infinite;
 }
 
 .left-carousel .box:nth-child(3) {
-  animation: moveDownFull 18s linear infinite;
-  animation-delay: -5.14s;
+  top: -400px;
+  animation: moveDownSimple 28s linear infinite;
 }
 
 .left-carousel .box:nth-child(4) {
-  animation: moveDownFull 18s linear infinite;
-  animation-delay: -7.71s;
+  top: -600px;
+  animation: moveDownSimple 28s linear infinite;
 }
 
 .left-carousel .box:nth-child(5) {
-  animation: moveDownFull 18s linear infinite;
-  animation-delay: -10.28s;
+  top: -800px;
+  animation: moveDownSimple 28s linear infinite;
 }
 
 .left-carousel .box:nth-child(6) {
-  animation: moveDownFull 18s linear infinite;
-  animation-delay: -12.85s;
+  top: -1000px;
+  animation: moveDownSimple 28s linear infinite;
 }
 
 .left-carousel .box:nth-child(7) {
-  animation: moveDownFull 18s linear infinite;
-  animation-delay: -15.42s;
+  top: -1200px;
+  animation: moveDownSimple 28s linear infinite;
 }
 
-@keyframes moveDownFull {
+/* Simple down movement with translateY instead of changing top position */
+@keyframes moveDownSimple {
   0% {
-    top: -190px;
-    opacity: 0;
-    filter: blur(3px);
-  }
-  5% {
-    top: -120px;
-    opacity: 0.5;
-    filter: blur(1px);
-  }
-  15% {
-    top: 0;
-    opacity: 1;
-    filter: blur(0);
-  }
-  30% {
-    top: 190px;
-    opacity: 1;
-    filter: blur(0);
-  }
-  45% {
-    top: 380px;
-    opacity: 1;
-    filter: blur(0);
-  }
-  60% {
-    top: 570px;
-    opacity: 0.5;
-    filter: blur(1px);
-  }
-  75% {
-    top: 650px;
-    opacity: 0;
-    filter: blur(3px);
+    transform: translateY(0);
   }
   100% {
-    top: -190px;
-    opacity: 0;
-    filter: blur(3px);
+    transform: translateY(1400px);
   }
 }
 
