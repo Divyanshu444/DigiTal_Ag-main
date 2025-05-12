@@ -1592,3 +1592,208 @@ svg path[stroke="#fefe1f"] {
     padding: 20px 10px;
   }
 } 
+
+/* Service Explorer Section Styling */
+.service-explorer-section {
+  padding: 100px 0 80px;
+  position: relative;
+}
+
+.service-explorer-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.service-explorer-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.service-explorer-section .section-heading h2 {
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.service-category-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 40px 30px;
+  height: 100%;
+  transition: all 0.4s ease;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-category-box::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, #0000fb, #6b6bff);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+}
+
+.service-category-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.service-category-box:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.service-category-box .icon-area {
+  margin-bottom: 25px;
+}
+
+.service-category-box .icon-area img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.service-category-box:hover .icon-area img {
+  transform: scale(1.1);
+}
+
+.service-category-box h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.service-category-box p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.service-category-box .explore-link {
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.service-category-box .explore-link i {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.service-category-box .explore-link:hover {
+  color: #0000fb;
+}
+
+.service-category-box .explore-link:hover i {
+  transform: translateX(5px);
+} 
+
+/* Partner Carousel Overflow Fix */
+.about-brand-sliderarea {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.about-brand-sliderarea .container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.about-brand-slider {
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.brand-img1 {
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.brand-img1 img {
+  max-width: 85%;
+  height: auto;
+  max-height: 70px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.brand-img1:hover img {
+  transform: scale(1.05);
+}
+
+/* Fix for any owl-carousel that might cause horizontal scrolling */
+.owl-carousel {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.owl-stage-outer {
+  overflow: hidden;
+}
+
+/* Ensure owl-nav buttons don't cause overflow */
+.owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.owl-nav button {
+  pointer-events: all;
+  background: rgba(0, 0, 0, 0.3) !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.owl-nav button.owl-prev {
+  left: 10px;
+}
+
+.owl-nav button.owl-next {
+  right: 10px;
+}
+
+.owl-nav button i {
+  color: white;
+  font-size: 20px;
+} 

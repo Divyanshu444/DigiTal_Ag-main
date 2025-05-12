@@ -231,30 +231,30 @@ $(".header-search-btn").on("click", function (e) {
       nav:true,
       navText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"],
       dots:false,
-      items:5,
+      autoWidth:false,
       autoplay:true,
       smartSpeed:1500,
       autoplayTimeout:3000,
       responsiveClass:true,
       responsive:{
-      0:{
-        items:1,
-        margin:15
-      },
-      480:{
-        items:2,
-        margin:20
-      },
-      768:{
-        items:3,
-        margin:20
-      },
-      992:{
-        items:4
-      },
-      1200:{
-        items:5
-      }
+        0:{
+          items:1,
+          margin:15
+        },
+        480:{
+          items:2,
+          margin:20
+        },
+        768:{
+          items:3,
+          margin:20
+        },
+        992:{
+          items:4
+        },
+        1200:{
+          items:5
+        }
       }
     });
 
