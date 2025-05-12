@@ -14039,7 +14039,7 @@ Location:
   display: inline-block;
   position: relative;
   transition: 0.4s;
-  padding: 0 16px;
+  padding: 0 7px;
 }
 .homepage1-menu .vl-main-menu ul > li:hover a {
   color: var(--ztc-text-text-8);

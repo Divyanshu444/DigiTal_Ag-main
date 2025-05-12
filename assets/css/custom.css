@@ -953,29 +953,162 @@ svg path[stroke="#fefe1f"] {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
+  max-width: 600px; /* Added max-width to ensure the wider grid has enough space */
+  margin: 0 auto;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 250px);
-  gap: 20px;
+  grid-template-columns: repeat(2, 270px);
+  gap: 15px;
   position: relative;
 }
 
-/* Carousel column styles */
+/* Carousel styles */
 .carousel-column {
   position: relative;
-  height: 740px; /* Increased height to accommodate animation */
+  height: 650px; /* Visible area height */
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 5px; /* 5px gap between boxes */
+  gap: 30px;
+}
+
+/* Left column animation */
+.left-carousel .box:nth-child(1) {
+  animation: moveDownFull 18s linear infinite;
+  animation-delay: 0s;
+}
+
+.left-carousel .box:nth-child(2) {
+  animation: moveDownFull 18s linear infinite;
+  animation-delay: -2.57s;
+}
+
+.left-carousel .box:nth-child(3) {
+  animation: moveDownFull 18s linear infinite;
+  animation-delay: -5.14s;
+}
+
+.left-carousel .box:nth-child(4) {
+  animation: moveDownFull 18s linear infinite;
+  animation-delay: -7.71s;
+}
+
+.left-carousel .box:nth-child(5) {
+  animation: moveDownFull 18s linear infinite;
+  animation-delay: -10.28s;
+}
+
+.left-carousel .box:nth-child(6) {
+  animation: moveDownFull 18s linear infinite;
+  animation-delay: -12.85s;
+}
+
+.left-carousel .box:nth-child(7) {
+  animation: moveDownFull 18s linear infinite;
+  animation-delay: -15.42s;
+}
+
+@keyframes moveDownFull {
+  0% {
+    top: -190px;
+    opacity: 0;
+    filter: blur(3px);
+  }
+  5% {
+    top: -120px;
+    opacity: 0.5;
+    filter: blur(1px);
+  }
+  15% {
+    top: 0;
+    opacity: 1;
+    filter: blur(0);
+  }
+  30% {
+    top: 190px;
+    opacity: 1;
+    filter: blur(0);
+  }
+  45% {
+    top: 380px;
+    opacity: 1;
+    filter: blur(0);
+  }
+  60% {
+    top: 570px;
+    opacity: 0.5;
+    filter: blur(1px);
+  }
+  75% {
+    top: 650px;
+    opacity: 0;
+    filter: blur(3px);
+  }
+  100% {
+    top: -190px;
+    opacity: 0;
+    filter: blur(3px);
+  }
+}
+
+/* Right column - fixed position approach */
+.right-carousel {
+  overflow: hidden;
+}
+
+/* Position the right column boxes at fixed locations */
+.right-carousel .box:nth-child(1) {
+  top: 0px;
+  animation: moveUpSimple 28s linear infinite;
+}
+
+.right-carousel .box:nth-child(2) {
+  top: 200px;
+  animation: moveUpSimple 28s linear infinite;
+}
+
+.right-carousel .box:nth-child(3) {
+  top: 400px;
+  animation: moveUpSimple 28s linear infinite;
+}
+
+.right-carousel .box:nth-child(4) {
+  top: 600px;
+  animation: moveUpSimple 28s linear infinite;
+}
+
+.right-carousel .box:nth-child(5) {
+  top: 800px;
+  animation: moveUpSimple 28s linear infinite;
+}
+
+.right-carousel .box:nth-child(6) {
+  top: 1000px;
+  animation: moveUpSimple 28s linear infinite;
+}
+
+.right-carousel .box:nth-child(7) {
+  top: 1200px;
+  animation: moveUpSimple 28s linear infinite;
+}
+
+/* Simple up movement with translateY instead of changing top position */
+@keyframes moveUpSimple {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1400px);
+  }
 }
 
 /* Box styles */
 .box {
-  width: 250px;
-  height: 180px;
+  width: 270px;
+  height: 160px; /* Reduced from 180px to create more space between boxes */
   background: linear-gradient(135deg, #0000FB, #3030FF);
   border-radius: 16px;
   display: flex;
@@ -987,187 +1120,77 @@ svg path[stroke="#fefe1f"] {
   color: white;
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 0; /* Remove margin, using gap instead */
+  margin-bottom: 0;
   overflow: hidden; /* Ensure images don't overflow */
+  transition: transform 0.3s ease;
+  margin: 15px 0; /* Increased from 10px to provide more vertical spacing */
 }
 
 .box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: all 0.4s ease;
+  border-radius: 16px;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 251, 0.3);
 }
 
 .box:hover img {
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-/* Left carousel - moving from top to bottom with consistent spacing */
-.left-carousel .box:nth-child(1) {
-  animation: moveDownFull 12s linear infinite;
-  animation-delay: 0s;
-}
-
-.left-carousel .box:nth-child(2) {
-  animation: moveDownFull 12s linear infinite;
-  animation-delay: -3s;
-}
-
-.left-carousel .box:nth-child(3) {
-  animation: moveDownFull 12s linear infinite;
-  animation-delay: -6s;
-}
-
-.left-carousel .box:nth-child(4) {
-  animation: moveDownFull 12s linear infinite;
-  animation-delay: -9s;
-}
-
-/* Right carousel - moving from bottom to top with consistent spacing */
-.right-carousel .box:nth-child(1) {
-  animation: moveUpFull 12s linear infinite;
-  animation-delay: 0s;
-}
-
-.right-carousel .box:nth-child(2) {
-  animation: moveUpFull 12s linear infinite;
-  animation-delay: -3s;
-}
-
-.right-carousel .box:nth-child(3) {
-  animation: moveUpFull 12s linear infinite;
-  animation-delay: -6s;
-}
-
-.right-carousel .box:nth-child(4) {
-  animation: moveUpFull 12s linear infinite;
-  animation-delay: -9s;
-}
-
-@keyframes moveDownFull {
-  0% {
-    top: -185px;
-    opacity: 0;
-    filter: blur(4px);
-  }
-  10% {
-    top: 0;
-    opacity: 1;
-    filter: blur(0);
-  }
-  25% {
-    top: 185px;
-    opacity: 1;
-    filter: blur(0);
-  }
-  40% {
-    top: 370px;
-    opacity: 1;
-    filter: blur(0);
-  }
-  55% {
-    top: 555px;
-    opacity: 1;
-    filter: blur(0);
-  }
-  70% {
-    top: 740px;
-    opacity: 0;
-    filter: blur(4px);
-  }
-  100% {
-    top: 740px;
-    opacity: 0;
-    filter: blur(4px);
-  }
-}
-
-@keyframes moveUpFull {
-  0% {
-    top: 740px;
-    opacity: 0;
-    filter: blur(4px);
-  }
-  10% {
-    top: 555px;
-    opacity: 1;
-    filter: blur(0);
-  }
-  25% {
-    top: 370px;
-    opacity: 1;
-    filter: blur(0);
-  }
-  40% {
-    top: 185px;
-    opacity: 1;
-    filter: blur(0);
-  }
-  55% {
-    top: 0;
-    opacity: 1;
-    filter: blur(0);
-  }
-  70% {
-    top: -185px;
-    opacity: 0;
-    filter: blur(4px);
-  }
-  100% {
-    top: -185px;
-    opacity: 0;
-    filter: blur(4px);
-  }
-}
-
 /* Responsive styles for animated grid section */
 @media (max-width: 991px) {
   .grid-container {
-    grid-template-columns: repeat(2, 220px);
-    gap: 20px;
+    grid-template-columns: repeat(2, 240px);
+    gap: 15px;
   }
   
   .box {
-    width: 220px;
+    width: 240px;
     height: 160px;
   }
   
   .carousel-column {
-    height: 450px;
+    height: 600px; /* Adjusted for medium screens */
   }
 }
 
 @media (max-width: 767px) {
   .grid-container {
-    grid-template-columns: repeat(2, 180px);
-    gap: 15px;
+    grid-template-columns: repeat(2, 200px);
+    gap: 12px;
   }
   
   .box {
-    width: 180px;
+    width: 200px;
     height: 130px;
   }
   
   .carousel-column {
-    height: 400px;
+    height: 500px; /* Adjusted for smaller screens */
   }
 }
 
 @media (max-width: 575px) {
   .grid-container {
-    grid-template-columns: repeat(2, 150px);
-    gap: 10px;
+    grid-template-columns: repeat(2, 160px);
+    gap: 8px;
   }
   
   .box {
-    width: 150px;
+    width: 160px;
     height: 110px;
   }
   
   .carousel-column {
-    height: 350px;
+    height: 400px; /* Adjusted for mobile screens */
   }
-} 
+}
 
 /* Smaller subtitle style */
 .smaller-subtitle {
