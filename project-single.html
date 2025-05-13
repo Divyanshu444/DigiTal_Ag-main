@@ -61,29 +61,46 @@
                       <nav class="vl-mobile-menu-active">
                           <ul>
                               <li>
-                                <a href="about.html">About Us <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
-                                  <ul class="sub-menu">
-                                      <li><a href="testimonial.html">Testimonials</a></li>
-                                  </ul>
+                                  <a href="index.html">Home</a>
                               </li>
-                              <li><a href="#">Services <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
-                                <ul class="sub-menu">
-                                  <li><a href="service.html">Our Service</a></li>
-                                  <li><a href="service-single.html">Service Single</a></li>
-                              </ul>
+                              <li>
+                              
+                                <a href="about.html">About Us <span></span></a>
+                                  <!-- <ul class="sub-menu">
+                                       <li><a href="about.html">About Us</a></li> -->
+                                      <!-- <li><a href="team.html">Our Team</a></li>  -->
+                                      <!-- <li><a href="testimonial.html">Testimonials</a></li> -->
+                                      <!-- <li><a href="contact.html">Contact Us</a></li>
+                                      <li><a href="faq.html">FAQ,s</a></li>
+                                      <li><a href="404.html">404</a></li> -->
+                                  <!-- </ul> -->
                               </li>
-                              <li><a href="#">Project <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
-                                <ul class="sub-menu">
+                              <li><a href="service.html">Services <span></i></span></a>
+                                <!-- <ul class="sub-menu">
+                                  <li><a href="index2.html">Ai Solutions</a></li>
+                                  <li><a href="service-single.html">IT Services</a></li>
+                                  <li><a href="service-single.html">IT Industries</a></li>
+                              </ul> -->
+                              </li>
+                              <li><a href="project.html">Portfolios</a>
+                                <!-- <ul class="sub-menu">
                                   <li><a href="project.html">Project</a></li>
                                   <li><a href="project-single.html">Project Single</a></li>
-                              </ul>
+                              </ul> -->
                               </li>
-                              <li><a href="#">Blogs <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
-                                <ul class="sub-menu">
+                              <li><a href="Case_Study.html">Case Studies </a>
+                                <!-- <ul class="sub-menu">
                                    <li><a href="blog.html">Blog One</a></li>
                                   <li><a href="blog2.html">Blog Two</a></li>
                                    <li><a href="blog-single.html">Blog Single</a></li> 
-                              </ul>
+                              </ul> -->
+                              <li><a href="blog.html">Blogs </a>
+                                <!-- <ul class="sub-menu">
+                                   <li><a href="blog.html">Blog One</a></li>
+                                  <li><a href="blog2.html">Blog Two</a></li>
+                                   <li><a href="blog-single.html">Blog Single</a></li> 
+                              </ul> -->
+                              </li>
                               </li>
                           </ul>
                       </nav>
@@ -95,8 +112,9 @@
                       <a href="#"><img src="assets/img/icons/search1.svg" alt=""></a>
                     </div> -->
                           <span class="vl-btn-wrap text-end">
-                            <a href="contact.html" class="vl-btn1" style="overflow: hidden;">Let's Build Together</a>
+                            <a href="contact.html" class="vl-btn1" style="overflow: hidden;">Get in touch</a>
                           </span>
+                          
                           <button class="hamburger_menu"><img src="assets/img/icons/bars-icons1.svg" alt=""></button>
                   </div>
                   <div class="vl-header-action-item d-block d-lg-none">
@@ -362,7 +380,7 @@
 
                         <div class="list-details4">
                             <h4>Website:</h4>
-                            <h5 id="project-website">www.renev.com</h5>
+                            <p style="color: aliceblue; margin-left: 20px;" id="project-website">www.renev.com</p>
                         </div>
 
                         <div class="list-details5">
@@ -432,7 +450,7 @@
                       </div>
                       <div class="space32"></div>
                       <div class="btn-area1">
-                        <a href="project-single.html" class="vl-btn1" style="overflow: hidden;">live preview website</a>
+                        <a id="live-preview-btn" href="#" target="_blank" class="vl-btn1" style="overflow: hidden;">live preview website</a>
                       </div>
                       <div class="space60"></div>
                       <h3>Website Overview:</h3>
@@ -723,6 +741,9 @@
     document.getElementById('project-website').textContent = project.website;
     document.getElementById('project-description').textContent = project.description;
     document.getElementById('project-overview-title').textContent = project.projectOverviewTitle;
+    
+    // Update live preview button URL
+    document.getElementById('live-preview-btn').href = project.website;
     
     // Update project image
     document.getElementById('project-image').src = project.detailImage;
